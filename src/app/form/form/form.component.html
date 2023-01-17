@@ -1,4 +1,4 @@
 <p>form works!</p>
 <form [formGroup]="form">
-  <input digitOnly formControlName="phone">
+  <input digitOnly formControlName="phone" inputmode="numeric" pattern="[0-9]*" type="phone">
 </form>

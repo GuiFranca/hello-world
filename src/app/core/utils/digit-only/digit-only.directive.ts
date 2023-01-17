@@ -52,7 +52,7 @@ export class DigitOnlyDirective {
         // console.log('EL: ', this.el.nativeElement['value'])
         // const oldValue = this.inputElement.value.toString();
         // const newValue = oldValue + e?.data?.replace(/\D/g, '');
-        this.inputElement.value = this.inputElement.value.replace(/\D/g, '');
+        this.inputElement.value = this.inputElement.value.replace(/[^0-9.]+/g, '');
         return
       }
     }
